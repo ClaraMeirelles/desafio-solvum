@@ -7,7 +7,6 @@ export default function Footer() {
         <ul>
             <h3>Gestão</h3>
             <a href={'https://partners.subway.com/'} target={'_blank'}><li>Subway Partners™</li></a>
-            {/* link do site - abre na mesma aba */}
             <a href={'https://www.subway.com/pt-BR/Careers'}><li>Carreiras</li></a>
         </ul>
         <ul>

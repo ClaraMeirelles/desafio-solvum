@@ -5,3 +5,6 @@ export const goToDelivery = (history) => {
 export const goToHome = (history) => {
     history.push('/')
 }
+export const goToStores = (history) => {
+    history.push('/encontre-uma-loja')
+}
