@@ -10,6 +10,14 @@ export const StyledFooter = styled.footer`
         display: flex;
         flex-direction: column;
     }
+    section{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255 194 20);
+        color: rgb(15 146 70);
+        text-align: center;
+        justify-content: center;
+    }
 @media screen and (max-device-width: 420px){
     flex-direction: column;
     ul{

@@ -1,5 +1,6 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import Home from '../home/Home'
+import Home from '../pages/home/Home'
+import Stores from '../pages/stores/Stores'
 
 export default function Router(){
 return(
@@ -9,6 +10,9 @@ return(
         <Home />
     </Route>
     <Route exact path={'/delivery'}></Route>
+    <Route exact path={'/encontre-uma-loja'}>
+    <Stores />
+    </Route>
     </Switch>
     </BrowserRouter>
 )

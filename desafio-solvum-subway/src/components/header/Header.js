@@ -1,19 +1,21 @@
 import logo from '../../img/subway-logo-new.png'
 import { StyledHeader } from './styled'
+import { goToDelivery, goToHome, goToStores } from '../../routes/coordinator'
+import { useHistory } from 'react-router'
 export default function Header() {
+    const history = useHistory()
     return (
         <StyledHeader>
-        <img src={logo} alt='logo Subway' />
-        <ul>
-            <li>Encontre uma loja</li>
-            <li>Menu e Nutrição</li>
-            <li>SUBS NBA</li>
-            <li>Social</li>
-            <li>Sobre nós</li>
-            <li>Carreiras</li>
-            <li>Franquia</li>
-            <li>PEÇA JÁ!</li>
-        </ul>
+            <img onClick={() => goToHome(history)} src={logo} alt='logo Subway' />
+            <ul>
+                <li onClick={() => goToStores(history)}>Encontre uma loja</li>
+                <li>Menu e Nutrição</li>
+                <li>SUBS NBA</li>
+                <li>Sobre nós</li>
+                <li>Carreiras</li>
+                <li>Franquia</li>
+                <li onClick={() => goToDelivery(history)}>PEÇA JÁ!</li>
+            </ul>
         </StyledHeader>
     )
 }
