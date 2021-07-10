@@ -33,9 +33,9 @@ export const HomePage = styled.main`
     }
     @media screen and (min-device-width: 421px){
         display: grid;
-        grid-template-rows: 20vh 1fr 1fr 1fr;
+        grid-template-rows: 30vh 1fr 1fr 1fr 30vh;
         grid-template-columns: 1fr 1fr;
-        Header{
+        Header,Footer{
             grid-column: 1/3;
         }
     }

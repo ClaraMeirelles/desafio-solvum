@@ -1,4 +1,5 @@
 import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import { HomePage, PageSection, PageBanner, Promos } from "./styled";
 import imgBanner1 from '../../img/explosao-queijos.jpg'
 import imgFranchise from '../../img/subwayLogofoto.jpg'
@@ -24,6 +25,7 @@ export default function Home(){
         <PageBanner>
             <img src={imgBanner1} alt={'Anúncio da promoção "Explosão de queijos"'} />
         </PageBanner>
+        <Footer/>
         </HomePage>
     )
 }

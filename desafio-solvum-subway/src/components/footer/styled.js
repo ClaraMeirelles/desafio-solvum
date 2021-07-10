@@ -1,41 +1,38 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const StyledHeader = styled.header`
-    height:fit-content;
+export const StyledFooter = styled.footer`
+    height: fit-content;
     width: 99vw;
     background-color: white;
     padding: 6px;
     color: rgb(15 146 70); 
-
-@media screen and (max-device-width: 420px){
-    display: flex;
     ul{
-        li{
-            display: none;
-        }
-
-        :active,:hover{
-            li{
-            display: block;
-            position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+@media screen and (max-device-width: 420px){
+    flex-direction: column;
+    ul{
+        li:active, li:hover{
             text-decoration: underline;
             background-color: rgb(15 146 70);
             color: white;
-            }
         }
     }
 }
 @media screen and (min-device-width: 421px){
     display: grid;
-    grid-template-rows: 1fr 1fr;
-
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 1fr 1fr;
+    img{
+        grid-column: 1/7;
+    }
     ul{
-        display: flex;
         list-style: none;
+        border-right: 1px solid rgb(15 146 70);
 
         li{
             padding: 8px;
-            border-right: 1px solid rgb(15 146 70);
 
             :hover{
                 text-decoration: underline;
@@ -44,6 +41,14 @@ export const StyledHeader = styled.header`
             }
         }
     }
+    section{
+    grid-column: 1/7;
+    }
 }
 
+`
+
+export const Logo = styled.img`
+    height: 50px;
+    padding: 8px;
 `
