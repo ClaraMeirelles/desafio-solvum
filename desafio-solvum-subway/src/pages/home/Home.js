@@ -1,21 +1,28 @@
 import Header from "../../components/header/Header";
-import { HomePage, PageSection, PageBanner } from "./styled";
+import { HomePage, PageSection, PageBanner, Promos } from "./styled";
+import imgBanner1 from '../../img/explosao-queijos.jpg'
+import imgFranchise from '../../img/subwayLogofoto.jpg'
+import imgDelivery from '../../img/banner-delivery.jpg'
 export default function Home(){
 
     return(
         <HomePage>
         <Header />
         <PageBanner>
-            Delivery
+           <img src={imgDelivery} alt={'Anúncio delivery'} />
         </PageBanner>
         <PageSection>
-            Franquia
+            <h3>SEJA DONO DE UMA FRANQUIA!</h3>
+            <h1>Inscreva-se hoje!</h1>
+            <img src={imgFranchise} />
         </PageSection>
         <PageSection>
-            Promoções
+        <Promos>
+        <h2>Promoções</h2>
+        </Promos>
         </PageSection>
         <PageBanner>
-            Carrossel
+            <img src={imgBanner1} alt={'Anúncio da promoção "Explosão de queijos"'} />
         </PageBanner>
         </HomePage>
     )
