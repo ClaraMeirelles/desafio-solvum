@@ -5,7 +5,10 @@ export const StyledHeader = styled.header`
     width: 99vw;
     background-color: white;
     padding: 6px;
-    color: rgb(15 146 70); 
+    color: rgb(15 146 70);
+    li>ul{
+        display:none;
+        } 
 
 @media screen and (max-device-width: 420px){
     display: flex;
@@ -21,6 +24,7 @@ export const StyledHeader = styled.header`
             text-decoration: underline;
             background-color: rgb(15 146 70);
             color: white;
+            
             }
         }
     }
