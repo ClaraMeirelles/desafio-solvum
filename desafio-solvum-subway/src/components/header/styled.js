@@ -6,18 +6,68 @@ export const StyledHeader = styled.header`
     background-color: white;
     padding: 6px;
     color: rgb(15 146 70);
-    li>ul{
-        display:none;
-        } 
 
 @media screen and (max-device-width: 420px){
     display: flex;
-    ul{
-        li{
+    margin: 0;
+    padding:16px;
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s;
+    ul nav{
+        display:block;
+        font-size: 30px;
+    }
+}
+@media screen and (min-device-width: 421px){
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    nav{
+        display:none;
+    }
+}
+`
+
+export const MenuItem = styled.ul`
+    list-style:none;
+    position: relative;
+    display: flex;
+    li{
+        padding: 8px;
+        border-right: 1px solid rgb(15 146 70);
+        display: block;
+        :hover{
+            text-decoration: underline;
+            background-color: rgb(15 146 70);
+            color: white;
+            }
+        }
+        ul{
+            position:absolute;
             display: none;
+            background-color: white;
+            color:rgb(15 146 70);
+            padding:6px;
+            margin:0;
+        }
+        li:hover ul{
+                display: block;
+        }
+        li ul li{
+        border:none;
+        border-bottom: 1px solid rgb(15 146 70);
         }
 
-        :active,:hover{
+    }
+    @media screen and (max-device-width: 420px){
+    display: flex;
+    flex-direction:column;
+    position:relative;
+    height: fit-content;
+        li{
+            display: none;
+        :active{
             li{
             display: block;
             position: absolute;
@@ -27,27 +77,14 @@ export const StyledHeader = styled.header`
             
             }
         }
-    }
 }
-@media screen and (min-device-width: 421px){
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-
-    ul{
-        display: flex;
-        list-style: none;
-
+    @media screen and (min-device-width: 421px){
+        background-color: white;
+        width: fit-content;
+        padding: 6px;
         li{
-            padding: 8px;
-            border-right: 1px solid rgb(15 146 70);
-
-            :hover{
-                text-decoration: underline;
-                background-color: rgb(15 146 70);
-                color: white;
-            }
+            width: fit-content;
         }
     }
-}
-
+    
 `

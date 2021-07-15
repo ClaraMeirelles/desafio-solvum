@@ -91,3 +91,7 @@ export const Promos = styled.div`
         width: 98vw;
     }
 `
+
+export const MenuItem = styled.li`
+
+`
