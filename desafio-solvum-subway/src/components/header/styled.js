@@ -23,9 +23,6 @@ export const StyledHeader = styled.header`
 @media screen and (min-device-width: 421px){
     display: grid;
     grid-template-rows: 1fr 1fr;
-    ul{
-        width: 0;
-    }
     nav{
         display:none;
     }
@@ -68,13 +65,6 @@ export const MenuItem = styled.ul`
     flex-direction:column;
     position:relative;
     height: fit-content;
-    :active li{
-            display:block;
-            margin-left: -100px;
-            position: absolute;
-            height: 16px;
-        }
-    
         li{
             display: none;
         :active{
@@ -89,7 +79,12 @@ export const MenuItem = styled.ul`
         }
 }
     @media screen and (min-device-width: 421px){
-        padding:0;
+        background-color: white;
+        width: fit-content;
+        padding: 6px;
+        li{
+            width: fit-content;
+        }
     }
     
 `
