@@ -1,5 +1,5 @@
 import { Card, ImgCard } from "./styled";
-export default function CardSandwiches(props) {
+export default function CardProduct(props) {
     return (
         <Card>
             <ImgCard src={props.product.img_url} alt={`imagem do sanduíche ${props.product.name}`} />
