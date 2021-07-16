@@ -3,10 +3,8 @@ import bannerPromo from '../../img/Banner_Promo.jpg'
 
 export const HomePage = styled.main`
     margin-top: 32px;
-    min-height: 100vh;
-    height: fit-content;
     justify-items: center;
-
+    align-items: center;
     section{
         background-color: rgb(255 194 20);
         color: rgb(15 146 70);
@@ -41,6 +39,7 @@ export const HomePage = styled.main`
 export const PageBanner = styled.section`
     background-color: white;
     border: 6px solid rgb(255 194 20);
+    position: relative;
     img{
         height: 100%;
         object-fit: cover;
@@ -69,7 +68,7 @@ export const PageSection = styled.section`
         height: fit-content;
     }
     @media screen and (min-device-width: 421px){
-        min-height: 40vh;
+        min-height: 50vh;
         width: 35vw;
         height: fit-content;
     }
@@ -78,6 +77,7 @@ export const Promos = styled.div`
     background-image: url(${bannerPromo});
     background-repeat: no-repeat;
     background-size: cover;
+    height: 50vh;
     h2{
         margin: 24px;
     }
@@ -94,4 +94,29 @@ export const Promos = styled.div`
 
 export const MenuItem = styled.li`
 
+`
+export const BannerIcons = styled.nav`
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+
+    img{
+        height: 80px;
+        max-width: 88px;
+        object-fit: contain;
+        :hover{
+            height: 85px;
+
+        }
+    }
+
+    @media screen and (max-device-width: 420px){
+        width: 100vw;
+            img{
+                height: 50px;
+                max-width: 56px;
+            }
+    }
 `
