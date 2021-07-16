@@ -29,3 +29,6 @@ O desafio consiste em aprimorar uma página já existente na web - neste caso, f
 ### Mudanças na Tela de produtos:
 - Sanduíches listados em ordem alfabética facilitar ao usuário que encontre;
 - inclusão de bordas nas imagens;
+
+### Link do Surge:
+http://desafio-solvum-clara-meirelles.surge.sh/
